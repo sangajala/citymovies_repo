@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="16B2657" minimumToolsVersion="Xcode 7.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Locations" representedClassName=".Locations" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Movies" representedClassName=".Movies" syncable="YES">
+        <attribute name="actors" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="banner" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="censor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="description_" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="director" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iscommingsoon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="length" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mainimage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mdirector" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="movieArtists" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="movieImagesList" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="movieInVenueList" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="movierating" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="movieType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="movieVideosList" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="producer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="releasedate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="storyLine" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trailArUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="voice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="writer" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Theaters" representedClassName=".Theaters" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="theaterBookingDetails" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="vcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vlat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vlong" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vname" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Locations" positionX="-54" positionY="135" width="128" height="120"/>
+        <element name="Movies" positionX="-63" positionY="-18" width="128" height="450"/>
+        <element name="Theaters" positionX="-54" positionY="144" width="128" height="165"/>
+    </elements>
+</model>

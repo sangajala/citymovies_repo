@@ -1,0 +1,21 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'CityMovies' do
+
+use_frameworks!
+
+#pod 'AlamofireImage'
+#pod 'Kingfisher', '2.3.0'
+#pod 'Kingfisher', '~> 3.0'
+#pod 'DLImageLoader', '1.2.0-swift'
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '2.3'
+        end
+    end
+end
+
+end
