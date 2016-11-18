@@ -181,66 +181,39 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
                         let facebookProfileUrl = "http://graph.facebook.com/\(userID)/picture?type=large"
                         print("profile pic URL: \(facebookProfileUrl)")
                         
-//                        let block: SDWebImageCompletionBlock! = {(image: UIImage!, error: NSError!, cacheType: SDImageCacheType!, imageURL: URL!) -> Void in
-//                            print(self)
-//                        }
-                        
                         let url = NSURL(string: facebookProfileUrl)
                         let imgPlaceholder = UIImage(named: "Placeholder_male")
                         self.imgViewProfile?.image = imgPlaceholder
+                        
                         //ImagedNeeded
                         self.imgViewProfile?.kf_setImageWithURL(url!, placeholderImage: imgPlaceholder, optionsInfo: nil, progressBlock: nil, completionHandler: nil)
-                        
-//                        DLImageLoader.sharedInstance.imageFromUrl("image_url_here", imageView: "UIImageView here")
-                        
-                        
-                        
-//                        if let data = self.cache.objectForKey(url) as? NSData {
-//                            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)) {
-//                                let image = UIImage(data: data)
-//                                dispatch_async(dispatch_get_main_queue()) {
-//                                    self.imgViewProfile.image = image;
-//                                }
-//                            }
-//                        
-//                        
-//                        self.imgViewProfile!.image = nil;
-//                        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
-//                        dispatch_async(queue, ^(void) {
-//                            
-//                            NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:parsedData[@"imageLR"]];
-//                                
-//                                UIImage* image = [[UIImage alloc] initWithData:imageData];
-//                                if (image) {
-//                                dispatch_async(dispatch_get_main_queue(), ^{
-//                                if (cell.tag == indexPath.row) {
-//                                cell.imageView.image = image;
-//                                [cell setNeedsLayout];
-//                                }
-//                                });
-//                            }
-//                            });
-                        
-                        
-                        
-                        
-                        
                         
                     }
                     else{
                         
                         //Get the values from UserDefaults 
                         
-                        var strUserName:String! = UserDefaultsStore.userDefaults.objectForKey(UserDefaultsKeys.kUserNameKey) as! String
-                        
-                        strUserName = strUserName.stringByReplacingOccurrencesOfString("Optional(", withString: "")
-                        strUserName = strUserName.stringByReplacingOccurrencesOfString(")", withString: "")
-                        
-                        self.lblUserFirstName?.text = strUserName
-                        
-                        let imgPlaceholder = UIImage(named: "Placeholder_male")
-                        self.imgViewProfile?.image = imgPlaceholder
-                        imgViewProfileBackGround.image = imgPlaceholder
+                        if let strUserName_s = UserDefaultsStore.userDefaults.objectForKey(UserDefaultsKeys.kUserNameKey) as? String{
+                            
+                            print("User name: \(strUserName_s)")
+                            
+                            var strUserName:String! = UserDefaultsStore.userDefaults.objectForKey(UserDefaultsKeys.kUserNameKey) as! String
+                            
+                            strUserName = strUserName.stringByReplacingOccurrencesOfString("Optional(", withString: "")
+                            strUserName = strUserName.stringByReplacingOccurrencesOfString(")", withString: "")
+                            
+                            self.lblUserFirstName?.text = strUserName
+                            
+                            let imgPlaceholder = UIImage(named: "Placeholder_male")
+                            self.imgViewProfile?.image = imgPlaceholder
+                            
+                        }
+                        else{
+                            self.lblUserFirstName?.text = "Guest"
+                            
+                            let imgPlaceholder = UIImage(named: "Placeholder_male")
+                            self.imgViewProfile?.image = imgPlaceholder
+                        }
                     }
                 }
             })
@@ -249,15 +222,28 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         {
             //Get the values from UserDefaults
             
-            var strUserName:String! = UserDefaultsStore.userDefaults.objectForKey(UserDefaultsKeys.kUserNameKey) as! String
+            if let strUserName_s = UserDefaultsStore.userDefaults.objectForKey(UserDefaultsKeys.kUserNameKey) as? String{
+                
+                print("User name: \(strUserName_s)")
+                
+                var strUserName:String! = UserDefaultsStore.userDefaults.objectForKey(UserDefaultsKeys.kUserNameKey) as! String
+                
+                strUserName = strUserName.stringByReplacingOccurrencesOfString("Optional(", withString: "")
+                strUserName = strUserName.stringByReplacingOccurrencesOfString(")", withString: "")
+                
+                self.lblUserFirstName?.text = strUserName
+                
+                let imgPlaceholder = UIImage(named: "Placeholder_male")
+                self.imgViewProfile?.image = imgPlaceholder
+                
+            }
+            else{
+                self.lblUserFirstName?.text = "Guest"
+                
+                let imgPlaceholder = UIImage(named: "Placeholder_male")
+                self.imgViewProfile?.image = imgPlaceholder
+            }
             
-            strUserName = strUserName.stringByReplacingOccurrencesOfString("Optional(", withString: "")
-            strUserName = strUserName.stringByReplacingOccurrencesOfString(")", withString: "")
-            
-            self.lblUserFirstName?.text = strUserName
-            
-            let imgPlaceholder = UIImage(named: "Placeholder_male")
-            self.imgViewProfile?.image = imgPlaceholder
         }
         
 //        designTableVeiw()

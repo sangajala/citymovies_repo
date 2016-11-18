@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		4C013B171CD9B03F008E92FC /* AFViewShaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C013B161CD9B03F008E92FC /* AFViewShaker.m */; };
 		4C013B191CD9B7C9008E92FC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C013B181CD9B7C9008E92FC /* SignUpViewController.swift */; };
+		4C0BAC371DD5CA6E0011634B /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA97DA1DBE38FE00521506 /* Kingfisher.framework */; };
+		4C0BAC3C1DD5CA7A0011634B /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C955A791DC797D700A8D41D /* Messages.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4C0BAC3F1DD5CC4E0011634B /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C61D5BC1DB2A0D800736994 /* Kingfisher.framework */; };
+		4C0BAC411DD5CCFA0011634B /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA97DA1DBE38FE00521506 /* Kingfisher.framework */; };
+		4C0BAC421DD5CCFA0011634B /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA97DA1DBE38FE00521506 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4C1F71DC1D764AFB0039A713 /* Locations+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F71DA1D764AFB0039A713 /* Locations+CoreDataProperties.swift */; };
 		4C1F71DD1D764AFB0039A713 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F71DB1D764AFB0039A713 /* Locations.swift */; };
 		4C22CFD11CFD8A30007EB6A7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C22CFD01CFD8A30007EB6A7 /* SettingsViewController.swift */; };
@@ -39,7 +44,6 @@
 		4C91287A1CEACD6400F18F4E /* MoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9128791CEACD6400F18F4E /* MoviesTableViewCell.swift */; };
 		4C93DD2E1DB89BD200713BA4 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C93DD2D1DB89BD200713BA4 /* HMSegmentedControl.m */; };
 		4C955A6D1DC797CF00A8D41D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C955A6C1DC797CF00A8D41D /* CoreGraphics.framework */; };
-		4C955A7A1DC797D700A8D41D /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C955A791DC797D700A8D41D /* Messages.framework */; };
 		4C955A7C1DC797E200A8D41D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C955A7B1DC797E200A8D41D /* MessageUI.framework */; };
 		4C955A7E1DC797E800A8D41D /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C955A7D1DC797E800A8D41D /* Twitter.framework */; };
 		4C955A9C1DC798CF00A8D41D /* TOWebViewControllerLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C955A811DC798CF00A8D41D /* TOWebViewControllerLocalizable.strings */; };
@@ -55,8 +59,6 @@
 		4CAF3ADC1D582D9F00C0A699 /* Theaters+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF3ADA1D582D9F00C0A699 /* Theaters+CoreDataProperties.swift */; };
 		4CB825511DBCA905005F1F4E /* BookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB825501DBCA905005F1F4E /* BookVC.swift */; };
 		4CB825531DBCA9B1005F1F4E /* BookVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB825521DBCA9B1005F1F4E /* BookVCCell.swift */; };
-		4CBA97F11DBE391700521506 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA97DA1DBE38FE00521506 /* Kingfisher.framework */; };
-		4CBA97F21DBE391700521506 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA97DA1DBE38FE00521506 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4CC0A3701D2BC6200013FB19 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC0A36D1D2BC6200013FB19 /* FBSDKCoreKit.framework */; };
 		4CC0A3711D2BC6200013FB19 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC0A36E1D2BC6200013FB19 /* FBSDKLoginKit.framework */; };
 		4CC0A3721D2BC6200013FB19 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC0A36F1D2BC6200013FB19 /* FBSDKShareKit.framework */; };
@@ -74,6 +76,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4C0BAC391DD5CA6E0011634B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CBA97CA1DBE38FE00521506 /* Kingfisher.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D1ED2D341AD2D09F00CFC3EB;
+			remoteInfo = "Kingfisher-iOS";
+		};
+		4C0BAC431DD5CCFA0011634B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CBA97CA1DBE38FE00521506 /* Kingfisher.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D1ED2D341AD2D09F00CFC3EB;
+			remoteInfo = "Kingfisher-iOS";
+		};
 		4CBA97D91DBE38FE00521506 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4CBA97CA1DBE38FE00521506 /* Kingfisher.xcodeproj */;
@@ -158,23 +174,16 @@
 			remoteGlobalIDString = D10EC2311C3D632300A4211C;
 			remoteInfo = "KingfisherTests-OSX";
 		};
-		4CBA97F51DBE392400521506 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4CBA97CA1DBE38FE00521506 /* Kingfisher.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D1ED2D341AD2D09F00CFC3EB;
-			remoteInfo = "Kingfisher-iOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4CBA97C91DBE2F7700521506 /* Embed Frameworks */ = {
+		4C0BAC3B1DD5CA6E0011634B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4CBA97F21DBE391700521506 /* Kingfisher.framework in Embed Frameworks */,
+				4C0BAC421DD5CCFA0011634B /* Kingfisher.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,16 +289,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C0BAC3C1DD5CA7A0011634B /* Messages.framework in Frameworks */,
 				4C955AA51DC7A2C200A8D41D /* CoreLocation.framework in Frameworks */,
 				4C955A7E1DC797E800A8D41D /* Twitter.framework in Frameworks */,
 				4C955A7C1DC797E200A8D41D /* MessageUI.framework in Frameworks */,
-				4C955A7A1DC797D700A8D41D /* Messages.framework in Frameworks */,
 				4C955A6D1DC797CF00A8D41D /* CoreGraphics.framework in Frameworks */,
+				4C0BAC371DD5CA6E0011634B /* Kingfisher.framework in Frameworks */,
 				4C7FD5571CE4FF56002DF84E /* libxml2.2.tbd in Frameworks */,
 				4C7FD5551CE4FF51002DF84E /* libxml2.tbd in Frameworks */,
 				4CE1E0591CE26BB500276981 /* QuartzCore.framework in Frameworks */,
-				4CBA97F11DBE391700521506 /* Kingfisher.framework in Frameworks */,
 				4CC0A3701D2BC6200013FB19 /* FBSDKCoreKit.framework in Frameworks */,
+				4C0BAC411DD5CCFA0011634B /* Kingfisher.framework in Frameworks */,
+				4C0BAC3F1DD5CC4E0011634B /* Kingfisher.framework in Frameworks */,
 				4CC0A3711D2BC6200013FB19 /* FBSDKLoginKit.framework in Frameworks */,
 				4CC0A3721D2BC6200013FB19 /* FBSDKShareKit.framework in Frameworks */,
 				E2BC714C916E82F0D685B34F /* Pods_CityMovies.framework in Frameworks */,
@@ -650,12 +661,13 @@
 				4C70177B1CD9095400D8AF18 /* Resources */,
 				1D648B92242C0BF0983A9019 /* 📦 Embed Pods Frameworks */,
 				9ECA81C02056CC83D2B8EAAF /* 📦 Copy Pods Resources */,
-				4CBA97C91DBE2F7700521506 /* Embed Frameworks */,
+				4C0BAC3B1DD5CA6E0011634B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4CBA97F61DBE392400521506 /* PBXTargetDependency */,
+				4C0BAC3A1DD5CA6E0011634B /* PBXTargetDependency */,
+				4C0BAC441DD5CCFA0011634B /* PBXTargetDependency */,
 			);
 			name = CityMovies;
 			productName = CityMovies;
@@ -676,7 +688,7 @@
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = WP5H3UQ7P2;
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -921,10 +933,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4CBA97F61DBE392400521506 /* PBXTargetDependency */ = {
+		4C0BAC3A1DD5CA6E0011634B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Kingfisher-iOS";
-			targetProxy = 4CBA97F51DBE392400521506 /* PBXContainerItemProxy */;
+			targetProxy = 4C0BAC391DD5CA6E0011634B /* PBXContainerItemProxy */;
+		};
+		4C0BAC441DD5CCFA0011634B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Kingfisher-iOS";
+			targetProxy = 4C0BAC431DD5CCFA0011634B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1088,8 +1105,8 @@
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../../Framework/FacebookSDKs-iOS-4\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bananalabs.citymovies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "47fb0edd-2a49-4017-94f9-b604ca9c6624";
+				PROVISIONING_PROFILE_SPECIFIER = cm_bananalabs_dev_profile;
 				SWIFT_OBJC_BRIDGING_HEADER = "CityMovies/CityMovies-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
@@ -1106,7 +1123,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: epic testers limited (WP5H3UQ7P2)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = WP5H3UQ7P2;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1125,9 +1142,10 @@
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../../Framework/FacebookSDKs-iOS-4\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bananalabs.citymovies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "99af9b23-a3bc-4350-9fa5-27c0d53c42fe";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS Ad Hoc: com.bananalabs.citymovies";
 				SWIFT_OBJC_BRIDGING_HEADER = "CityMovies/CityMovies-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
